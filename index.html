@@ -42,18 +42,14 @@
           </ul>
         </div>
       </nav>
-      <input id="searchTerm" type="text" placeholder="Enter search term" />
-      <button id="search">
-        Search
-      </button>
-      <div id="content">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Recipe name" aria-label="Recipe name" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+        </div>
+        <div id="content">
           <h4 id="content-container"></h4>
       </div>
-      <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Recipe name" aria-label="Recipe" aria-describedby="button-addon2">
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
-        </div>
       </div>
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">

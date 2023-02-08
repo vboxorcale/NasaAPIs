@@ -1,4 +1,4 @@
-let searchButton = document.querySelector("#search")
+let searchButton = document.querySelector("#button-addon2")
 
 //Add an event listener to the button that runs the function sendApiRequest when it is clicked
 searchButton.addEventListener("click", ()=>{
