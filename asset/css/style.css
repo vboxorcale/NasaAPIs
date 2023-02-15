@@ -1,17 +1,23 @@
 body {
-    font-family: helvetica, arial, sans-serif;
-    margin: 2em;
-  }
-  
-  h1 {
-    font-style: italic;
-    color: #373fff;
-  }
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+}
 
-  .input-group {
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
 
-    margin-bottom: 50px;
-    margin-top: 50px;
-  }
+.input-group {
+
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.card{
+   margin: auto;
+   width: 500px;
+
+}
 
   
