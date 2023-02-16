@@ -58,12 +58,13 @@
         </div>
       </nav>
       <!--Search bar-->
-      <div class="input-group col-6 offset-3">
-        <input type="text" class="form-control" placeholder="search something" aria-label="Recipe name" aria-describedby="button-addon2">
-        <div class="input-group-append">
-          <button class="btn btn-outline-primary" type="button" id="search">Search</button>
-        </div>   
+      <div id="form" class="input-group col-6 offset-3">
+          <input type="text" id="search" class="form-control" placeholder="search something" aria-label="search-bar" aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-outline-primary" type="button" >Search</button>
+          </div>    
       </div>
+      <div id="result"></div>
 
       <div id="content">
         <h4 id="content-container"></h4>
