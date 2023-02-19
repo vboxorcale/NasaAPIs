@@ -1,8 +1,6 @@
 let pickaDate = document.querySelector("#pickadate");
-let inputDate = pickaDate.value
+//let inputDate = pickaDate.value
 let xmlhttp = new XMLHttpRequest();
-
-
 
 flatpickr(pickaDate, {
   
@@ -19,8 +17,8 @@ let dateLink = `&date=${pickaDate.value}&`
 //let dateLink = "&date=" +pickaDate.value+ "&";
 let queryByDate = `${apiLink}${dateLink}`
 console.log(queryByDate);
-console.log(pickaDate.value);
-console.log(inputDate);
+console.log(pickaDate);
+//console.log(inputDate);
 
 
 xmlhttp.onreadystatechange = function() {
