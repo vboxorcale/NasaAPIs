@@ -12,19 +12,19 @@ input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: searchfield-cancel-button;
 }
 
-@font-face {
-  font-family: myFirstFont;
-  src: url(sansation_light.woff);
-}
+
 
 h1 {
-  font-family: myFirstFont;
+  font-family: "Audiowide", sans-serif;
   font-style: italic;
   color: #373fff;
 }
+.brandtext{
+  font-family: "Sofia", sans-serif;
+}
 
 .nav-link{
-  font-family: myFirstFont;
+  font-family:"Audiowide", sans-serif ;
 }
 
 .input-group {

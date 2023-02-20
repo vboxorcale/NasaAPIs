@@ -20,6 +20,7 @@ searchForm.addEventListener('submit', (event) => {
     .then(response => response.json())
     .then(data => {
         
+
       // Extract the relevant information from the API response
       const items = data.collection.items;
       if (items.length === 0) {
@@ -30,7 +31,7 @@ searchForm.addEventListener('submit', (event) => {
         return;
       }else {
         // Convert the API response to HTML elements representing search results
-        const searchResultsHTML = items.map(item => {
+        const searchResultsAPI = items.map(item => {
           const title = item.data[0].title;
           const imageUrl = item.links[0].href;
           const description = item.data[0].description;
@@ -48,13 +49,15 @@ searchForm.addEventListener('submit', (event) => {
             </div>       
           `;
         }).join('');
-        console.log(`https://images-api.nasa.gov/search?q=${query}&media_type=image`);
+
+        console.log(data);
+        
 
          // Store the search query and results in local storage
-         localStorage.setItem(query, searchResultsHTML);
+         localStorage.setItem(query, searchResultsAPI);
 
         // Display the search results to the user
-        searchResults.innerHTML = searchResultsHTML;
+        searchResults.innerHTML = searchResultsAPI;
       }
     })
     .catch(error => {

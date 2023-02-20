@@ -27,6 +27,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
      />
+     <link 
+     rel="stylesheet" 
+     href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong"
+     />
    
   </head>
   <body>
@@ -36,7 +40,7 @@
     </h1>
     <!--Nav bar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Bootcamp</a>
+        <div class="brandtext"><a class="navbar-brand" href="#">Bootcamp</a></div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -60,6 +64,7 @@
       </div>
       <div class="card w-50">
        <!--Date picker-->
+       <i class="fa-regular fa-calendar-days"></i>
        PICK A DATE TO SELECT PICTURE OF THE DATE:
        <div class="pickadate">
         <input type="text" value="" id="pickadate" class="pickadate" class="form-control" placeholder="pick a date" aria-label="Recipe name" aria-describedby="button-addon2">
@@ -81,8 +86,9 @@
       <div class="container">
         <div class="search-container">
           <form id="search-form">
+            
             <input type="search" id="search-input" placeholder="Enter a search term...">
-            <button type="submit" class="btn btn-info btn-lg">Search Nasa</button>
+            <button type="submit" class="btn btn-info btn-lg"><i class="fa-solid fa-rocket"></i> Search Nasa</button>
           </form>
         </div>
       </div>
