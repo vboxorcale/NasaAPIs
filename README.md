@@ -1,6 +1,6 @@
 # NASA APIs (Astronomy Picture of the Day and Search engine of NASA)
 
-[![Alt text](asset/images/screencap.png)
+![Alt text](./asset/images/screencap.png)
 
 ## The first part is Astronomy Picture of the Day
 The myscript.js file is a JavaScript script that uses the NASA APOD (Astronomy Picture of the Day) API to retrieve and display the image or video for a selected date. The code uses the flatpickr library to create a date picker and listens for changes to the selected date. When a new date is selected, an XMLHttpRequest is sent to the NASA APOD API with the selected date, and the response data is parsed and used to update the HTML to display the corresponding image or video.
@@ -14,6 +14,8 @@ When the XMLHttpRequest object receives a response, the code checks that the res
 If the media type is an image, an HTML img tag is created with a source URL of the retrieved image and a link to the high-definition version of the image. If the media type is a video, an HTML iframe tag is created with a source URL of the retrieved video.
 
 ## The second part is Search engine of NASA
+
+![Alt text](./asset/images/screencap2.png)
 
 The search.js file is a JavaScript code that allows users to search for images related to a query using the NASA Images API.
 
