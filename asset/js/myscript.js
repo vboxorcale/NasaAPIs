@@ -18,7 +18,7 @@ let dateLink = `&date=${pickaDate.value}&`
 let queryByDate = `${apiLink}${dateLink}`
 console.log(queryByDate);
 console.log(pickaDate);
-//console.log(inputDate);
+
 
 
 xmlhttp.onreadystatechange = function() {
